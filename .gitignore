@@ -1,0 +1,14 @@
+*/__pycache__/*
+*pyc
+.vscode/
+
+experiments/*
+
+.venv/*
+.history
+wandb/
+tools/
+*.log
+result_recon/
+*.tar
+data/MVTec-AD/mvtec_anomaly_detection/*
