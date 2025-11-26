@@ -72,23 +72,17 @@ net:
     type: models.reconstructions.UniADMemory
     kwargs:
       memory_mode: 'both'  # Options: 'channel', 'spatial', 'both', 'none'
-      fusion_mode: 'concat'  # Options: 'concat', 'add', 'multiply', 'attention', 'gate'
+      fusion_mode: 'concat'  # Options: 'concat', 'add', 'multiply'
       channel_memory_size: 256
       spatial_memory_size: 256
 ```
 
 ### Training
 
-To train the model on a specific class:
+For multi-class training::
 
 ```bash
-python tools/train_val.py --config tools/config.yaml --class_name bottle --single_gpu
-```
-
-For multi-class training:
-
-```bash
-python tools/train_single.py
+python tools/train_val.py --config tools/config.yaml --single_gpu
 ```
 
 ### Evaluation
